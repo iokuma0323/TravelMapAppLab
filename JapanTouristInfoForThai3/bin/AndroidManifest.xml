@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lab.jti.thai"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="JapanTouristInfoForThai"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyA4pxqVievrHm6OByCtDO0o5_7M_UTMJ8E" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="com.lab.jti.thai.MainActivity"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.MapActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.VolleyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.NotificationWebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.SettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.RegistUserActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.RegistGroupActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.PartGroupActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.SearchGroupActivity"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.RouteSearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.SoundActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.ImageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.VideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.SearchActivity"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.RootActivity"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.RootDetailActivity"
+             android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.ShoppingActivity"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.ShoppingDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.SpotActivity"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.SpotDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.HotelActivity"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.HotelDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.RestaurantActivity"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.RestaurantDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.WeatherActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.CheckUserInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.ItineraryActivity"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.lab.jti.thai.RestaurantCategoryActivity"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="CallBackActivity"
+            android:label="JapanTouristInfoForThai"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="Callback" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TwitterOAuthActivity"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="twitter"
+                    android:scheme="gabu" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.rakuraku.android.imasora.ImaSoraActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        
+        <activity
+            android:name="com.example.android.sip.WalkieTalkieActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="JapanTouristInfoForThai"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        
+        <service android:name="com.lab.jti.thai.SendRequestTimerService" />
+
+    </application>
+
+</manifest>

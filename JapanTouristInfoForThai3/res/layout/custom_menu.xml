@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_Main_Category2"
+        android:layout_width="wrap_content"
+        android:layout_height="200sp"
+        android:layout_alignLeft="@+id/textView_Main_Title"
+        android:layout_alignRight="@+id/textView_Main_Title"
+        android:background="#6495ED"
+        android:layout_below="@+id/relativeLayout_Main_Category1" >
+
+        <Button
+            android:id="@+id/button_TestLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Map" />
+
+        <Button
+            android:id="@+id/button_FacebookLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="Facebook" />
+
+        <Button
+            android:id="@+id/button_TwitterLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="twitter" />
+
+        <Button
+            android:id="@+id/button_TestFlipper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_FacebookLogin"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="49dp"
+            android:text="Flipper" />
+
+    </RelativeLayout>
+    
+    
+</LinearLayout>

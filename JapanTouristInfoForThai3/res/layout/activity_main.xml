@@ -1,0 +1,298 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00008b"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_Main_Category1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#00008b" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dummy_main_top2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_Main_Category2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout_Main_Category1"
+        android:background="#00008b" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_Main_Action1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" >
+
+            <Button
+                android:id="@+id/button_Main_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:background="@drawable/button_main_dummy_white"
+                android:text="1:30pm" />
+
+            <Button
+                android:id="@+id/button_Main_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:background="@drawable/button_main_dummy_white"
+                android:drawableTop="@drawable/icon_hare"
+                android:text="Tokyo" />
+
+            <Button
+                android:id="@+id/button_Main_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:background="@drawable/button_main_dummy_white"
+                android:drawableTop="@drawable/icon_yajirushi"
+                android:text="500m/nshibuya st." />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_Main_Category3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout_Main_Category2"
+        android:background="#4682b4" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:text="　Infomation" />
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/button_main_more"
+            android:text="More" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_Main_Category4"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout_Main_Category3"
+        android:background="#f5f5f5" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="　14:00　Get on the Yamate Line at Shinjyuku Sta.\n　14:30　Change at Odaiba for Odaiba-Keihin-Kouen\n　　　　　to the Yurikamome Line." />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_Main_Category5"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_below="@+id/relativeLayout_Main_Category4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#00008b" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_Main_Action1"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" >
+
+            <Button
+                android:id="@+id/button_Main_Search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:background="@drawable/button_main_search"
+                android:drawableTop="@drawable/icon_search"
+                android:text="Search" />
+
+            <Button
+                android:id="@+id/button_Main_Itinerary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:background="@drawable/button_main_itinerary"
+                android:drawableTop="@drawable/icon_itinerary"
+                android:text="Itinerary" />
+
+            <Button
+                android:id="@+id/button_Main_Root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:background="@drawable/button_main_root"
+                android:drawableTop="@drawable/icon_root"
+                android:text="Root" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_Main_Action2"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout_Main_Action1"
+            android:layout_toLeftOf="@+id/linearLayout1"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/button_Main_Hotel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:background="@drawable/button_main_hotel"
+                android:drawableTop="@drawable/icon_hotel"
+                android:text="Hotel" />
+
+            <Button
+                android:id="@+id/button_Main_Spot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:background="@drawable/button_main_spot"
+                android:drawableTop="@drawable/icon_spot"
+                android:text="spot" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_Main_Action3"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/linearLayout_Main_Action2"
+            android:layout_below="@+id/linearLayout_Main_Action2"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/button_Main_Shopping"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:background="@drawable/button_main_shopping"
+                android:drawableTop="@drawable/icon_shopping"
+                android:text="Shopping" />
+
+            <Button
+                android:id="@+id/button_Main_Restaurant"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:background="@drawable/button_main_restaurant"
+                android:drawableTop="@drawable/icon_restaurant"
+                android:text="Restaurant" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/linearLayout_Main_Action2" >
+
+            <Button
+                android:id="@+id/button_Main_Call"
+                android:layout_width="120dp"
+                android:layout_height="145dp"
+                android:background="@drawable/button_main_call"
+                android:drawablePadding="-25dp"
+                android:drawableTop="@drawable/icon_call"
+                android:text="Call" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_Main_Category6"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#808080" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_Main_Action4"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/textView_Main_Top"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Top" />
+
+            <TextView
+                android:id="@+id/textView_Main_Search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:text="Search" />
+
+            <TextView
+                android:id="@+id/textView_Main_Contact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:text="Contact" />
+
+            <TextView
+                android:id="@+id/textView_Main_Help"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:text="Help" />
+
+            <TextView
+                android:id="@+id/textView_Main_Setting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:text="Setting" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
